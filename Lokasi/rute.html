@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Makan Sederhana</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<body>
+    <header>
+        <div>
+            <img src="logo.png" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Makan Apa?</a></li>
+                <li><a href="#">Mari Makan</a></li>
+                <li><a href="#">Ulasan</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+                <button onclick="sayHi()">Hi, User!</button> <!-- Tombol "Hi, User!" -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Selamat Datang di Warung Murtini</h1>
+        <div class="address">
+            <p>Jl. Sidodadi No.1176, RT.02/RW.03,</p>
+            <p>Legok, Purwokerto Kidul,</p>
+            <p>Kec.Purwokerto Sel, Kabupaten Banyumas,</p>
+            <p>Jawa Tengah 53147</p>
+        </div>
+        <button onclick="openMaps()">Lihat Rute</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Warung Makan Murtini</p>
+        <!-- Informasi Sosial Media -->
+        <div>
+            <a href="https://www.facebook.com/WarungMurtini" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com/WarungMurtini" target="_blank">
+                <img src="twitter-icon.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/WarungMurtini" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function openMaps() {
+            var url = "https://maps.app.goo.gl/rH44Nizz1QXR7bPRA"; // URL peta
+            window.open(url, '_blank');
+        }
+        function sayHi() {
+            alert("Hi, User!");
+        }
+    </script>
+</body>
+</html>
